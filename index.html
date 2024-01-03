@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+
+<head>
+  <link rel="icon" type="image/svg+xml" href="icon.svg">
+  <title>TiniSus</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .w3-sidebar a {
+      font-family: "Roboto", sans-serif
+    }
+
+    body,
+    h3,
+    h4,
+    .w3-wide {
+      font-family: "Montserrat", sans-serif;
+    }
+  </style>
+</head>
+
+<body class="w3-content" style="max-width:1200px">
+
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+    <div class="w3-container w3-display-container w3-padding-16">
+      <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+      <h3 class="w3-wide"><img src="logo.svg" alt="LOGO" style="width:100%"></h3>
+      <h3>Usaha mikro yang memproduksi kue sus. Dengan komposisi air, margarin, tepung terigu, garam, susu sapi, gula,
+        dan tepung jagung yang terjamin membuat kepercayaan konsumen semakin kuat.</h3>
+    </div>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-bar w3-top w3-hide-large w3-green w3-xlarge">
+    <div class="w3-bar-item w3-padding-24 w3-wide"><img src="logo.svg" alt="LOGO" style="width:25vw"></div>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i
+        class="fa fa-bars"></i></a>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+    id="myOverlay"></div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:250px">
+
+    <!-- Push down content on small screens -->
+    <div class="w3-hide-large" style="margin-top:83px"></div>
+
+    <!-- Product grid -->
+    <div class="w3-row">
+      <div class="w3-third w3-container">
+        <img src="../img/susbuah.jpg" style="width:100%">
+        <p>Sus Buah<br><b>Rp 2.500</b></p>
+      </div>
+      <div class="w3-third w3-container">
+        <img src="../img/suscoklat.jpg" style="width:100%">
+        <p>Sus Coklat<br><b>Rp 2.300</b></p>
+      </div>
+      <div class="w3-third w3-container">
+        <img src="../img/susvla.jpg" style="width:100%">
+        <p>Sus Vla<br><b>Rp 2.000</b></p>
+      </div>
+    </div>
+
+    <!-- Subscribe section -->
+    <div class="w3-container w3-green w3-padding-32">
+      <iframe width="100%" height="500"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=110.40636956691743%2C-7.072343070626476%2C110.40842413902284%2C-7.070738001600427&amp;layer=mapnik"
+        style="border: 1px solid black"></iframe>
+      <br /><small><a href="https://www.openstreetmap.org/#map=18/-7.07154/110.40990" target="_blank">Perbesar
+          Peta</a></small>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-padding-64 w3-light-grey w3-small w3-center">
+      <div class="w3-row-padding">
+        <div class="w3-col">
+          <h4><i class="fa fa-fw fa-map-marker"></i>Jalan Rumpun Diponegoro VIII/126, RT 5, RW 7, Banyumanik, Semarang
+          </h4>
+          <h4><i class="fa fa-fw fa-phone"></i>+62 882 1486 7144</h4>
+        </div>
+      </div>
+    </footer>
+
+    <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp"
+        title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+    <!-- End page content -->
+  </div>
+
+  <script>
+    // Open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+  </script>
+
+</body>
+
+</html>
